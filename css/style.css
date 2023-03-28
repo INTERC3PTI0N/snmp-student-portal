@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right bottom, #c1edf5, #a0a1f0, #80a2ed, #8761ef, #3f2cee);
+  }
+  
+  .sidebar {
+    margin: 0;
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.user {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .sidebar a.active {
+    background-color: #5562da;
+    color: white;
+    font-size: 16px;
+  }
+  .sidebar a:hover:not(.user,.active) {
+    background-color: #153fb3;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    padding-top: 2rem;
+  }
+
+  .topnav {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .topnav a:hover {
+    background-color: #153fb3;
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
