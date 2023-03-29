@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right bottom, #c1edf5, #a0a1f0, #80a2ed, #8761ef, #3f2cee);
+    background: white
   }
   
   .sidebar {
@@ -37,9 +37,12 @@ body {
   }
   
   div.content {
+    display: grid;
     margin-left: 200px;
-    padding: 1px 16px;
-    padding-top: 2rem;
+    padding: 20px;
+    padding-top: 4rem;
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
   }
 
   .topnav {
@@ -66,4 +69,16 @@ body {
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
+  }
+
+  #quote {
+    border-radius: 25px;
+    background: hsla(159, 100%, 53%, 1);
+    padding: 20px;
+    width: 250px;
+    height: auto;   
+  }
+
+  .grid-item {
+    text-align: center;
   }
