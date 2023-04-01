@@ -8,12 +8,26 @@
     <title>Login Page</title>
   </head>
   <body>
-    <div class="login-form">
-      <h1>Login Portal</h1>
+    <div class="wrapper">
+      <div class="title">SNMP Login</div>
       <form id="loginform">
-        <input class="form-control" type="email" placeholder="Username" id="user">
-        <input class="form-control" type="password" placeholder="Password" id="pass">
-        <input class="loginbtn" type="submit" value="Login">
+        <div class="field">
+          <input required class="form-control" type="email" id="user">
+          <label>Email</label>
+        </div>
+        <div class="field">
+          <input required class="form-control" type="password" id="pass">
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+        </div>
+        <div class="field">
+          <input class="loginbtn" type="submit" value="Login">
+        </div>
       </form>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>

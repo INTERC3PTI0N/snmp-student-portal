@@ -4,51 +4,91 @@
 		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Login Page</title>
+    <title>Home Page</title>
     </head>
   <body>
-    <div class="topnav">
-      <a id="loggedclick" type="submit" value="Log Out">Log Out</a>
-    </div>
     <div class="sidebar">
-      <a class="user">S.N.M Polytechnic</a>
-      <a class="active" >Home</a>
-      <a>Progress Report</a>
-      <a>Assignments</a>
-      <a>Timetable</a>
-      <a>Attendance</a>
-      <a>Instructor Details</a>
-      <a>Anonymous Reporting</a>
-      <a>Complaint Section</a>
-      <a>Exam Schedule</a>
-      <a>Results Section</a>
-      <a>Student Profile</a>
+      <div class="logo-details">
+          <div class="logo_name">SNMP Portal</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">
+            <i class='bx bx-home-alt-2'></i>
+            <span class="links_name">Home</span>
+          </a>
+           <span class="tooltip">Home</span>
+        </li>
+        <li>
+         <a href="timetable.html">
+          <i class='bx bx-calendar-week'></i>
+           <span class="links_name">Timetable</span>
+         </a>
+         <span class="tooltip">Timetable</span>
+       </li>
+       <li>
+         <a href="attendance">
+          <i class='bx bx-user-check'></i>
+           <span class="links_name">Attendancee</span>
+         </a>
+         <span class="tooltip">Attendance</span>
+       </li>
+       <li>
+         <a href="faculty">
+          <i class='bx bx-group' ></i>
+           <span class="links_name">Faculty</span>
+         </a>
+         <span class="tooltip">Lecturers</span>
+       </li>
+       <li>
+         <a href="complain.html">
+          <i class='bx bx-message-alt-error'></i>
+           <span class="links_name">Complaint Section</span>
+         </a>
+         <span class="tooltip">Issues</span>
+       </li>
+       <li>
+         <a href="exams.html">
+          <i class='bx bx-calendar'></i>
+           <span class="links_name">Exam Schedule</span>
+         </a>
+         <span class="tooltip">Exam Schedule</span>
+       </li>
+       <li>
+         <a href="results.html">
+          <i class='bx bx-chart'></i>
+           <span class="links_name">Results</span>
+         </a>
+         <span class="tooltip">Exam Results</span>
+       </li>
+       <li>
+         <a href="profile.html">
+          <i class='bx bx-user'></i>
+           <span class="links_name">Student Profile</span>
+         </a>
+         <span class="tooltip">Profile</span>
+       </li>
+       <li class="profile">
+           <div class="profile-details">
+             <!--<img src="profile.jpg" alt="profileImg">-->
+             <div class="name_job">
+               <div class="name">Sujal Kumar</div>
+               <div class="job">Student</div>
+             </div>
+           </div>
+           <i class='bx bx-log-out' id="loggedclick"></i>
+       </li>
+      </ul>
     </div>
-    
-    <div class="content">
-      
-    </div>
+    <section class="home-section">
+  </section>
 
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>
-    <script>
-        var firebaseConfig = {
-	    apiKey: "AIzaSyBxogVMrdgMoibTqBGkYO9x9gSuSFg456E",
-	    authDomain: "snmp-3eab1.firebaseapp.com",
-	    projectId: "snmp-3eab1",
-	    storageBucket: "snmp-3eab1.appspot.com",
-	    messagingSenderId: "581968628905",
-	    appId: "1:581968628905:web:dcc1900e993fc004086db8",
-	    measurementId: "G-7M1ECEJRG6"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-        var db = firebase.firestore();
-        db.settings({
-            timestampsInSnapshots: true
-        });
-        </script>
-        <script type="text/javascript" src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/fire.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
   </body>
 </html>
